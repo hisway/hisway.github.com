@@ -10,12 +10,8 @@
 漏洞检测工具：http://filippo.io/Heartbleed/
 该漏洞可能暴露密钥和私密通信，应尽快修补！！!
 存在此漏洞的版本情况：
-
-OpenSSL 1.0.1 和OpenSSL 1.0.2-beta存在此漏洞
-
-更老版本OpenSSL(1.0.0和0.9.8)不受影响
-
-
+1.OpenSSL 1.0.1 和OpenSSL 1.0.2-beta存在此漏洞
+2.更老版本OpenSSL(1.0.0和0.9.8)不受影响
 修补方法：
 
 如果为OpenSSL 1.0.1版本，应尽快升级到OpenSSL 1.0.1g(已修复漏洞)
@@ -30,9 +26,7 @@ OpenSSL 1.0.1 和OpenSSL 1.0.2-beta存在此漏洞
 检查相关服务是否有此漏洞：http://filippo.io/Heartbleed/
 
 查看机器上OpenSSL版本, 确认依赖OpenSSL的服务
-
-
-    openssl version -a
+ openssl version -a
 
 如果为OpenSSL 1.0.1[a-f] 或者 OpenSSL 1.0.2-beta版本，建议从官网下载OpenSSL 1.0.1g
  wget http://www.openssl.org/source/openssl-1.0.1g.tar.gz
@@ -125,12 +119,8 @@ OpenSSL 1.0.1 和OpenSSL 1.0.2-beta存在此漏洞
 <p>漏洞检测工具：<a href="http://filippo.io/Heartbleed/" target="_blank">http://filippo.io/Heartbleed/</a></p>
 <p>该漏洞可能暴露密钥和私密通信，应尽快修补！！!</p>
 <p>存在此漏洞的版本情况：</p>
-<ol>
-<li><p>OpenSSL 1.0.1 和OpenSSL 1.0.2-beta存在此漏洞</p>
-</li>
-<li><p>更老版本OpenSSL(1.0.0和0.9.8)不受影响</p>
-</li>
-</ol>
+<p>1.OpenSSL 1.0.1 和OpenSSL 1.0.2-beta存在此漏洞</p>
+<p>2.更老版本OpenSSL(1.0.0和0.9.8)不受影响</p>
 <p>修补方法：</p>
 <ol>
 <li><p>如果为OpenSSL 1.0.1版本，应尽快升级到OpenSSL 1.0.1g(已修复漏洞)</p>
@@ -145,10 +135,8 @@ OpenSSL 1.0.1 和OpenSSL 1.0.2-beta存在此漏洞
 <li><p>检查相关服务是否有此漏洞：<a href="http://filippo.io/Heartbleed/" target="_blank">http://filippo.io/Heartbleed/</a></p>
 </li>
 <li><p>查看机器上OpenSSL版本, 确认依赖OpenSSL的服务</p>
+<p> openssl version -a</p>
 </li>
-</ol>
-<pre><code>    openssl version -a
-</code></pre><ol>
 <li><p>如果为OpenSSL 1.0.1[a-f] 或者 OpenSSL 1.0.2-beta版本，建议从官网下载OpenSSL 1.0.1g</p>
 <pre><code> wget http://www.openssl.org/source/openssl-1.0.1g.tar.gz
  tar -zxvf openssl-1.0.1g.tar.gz &amp;&amp; cd openssl-1.0.1g/
